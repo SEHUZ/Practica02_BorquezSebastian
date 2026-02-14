@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivFondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/fondo"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-150dp" />
+
+    <ImageView
+        android:id="@+id/ivPortada"
+        android:layout_width="166dp"
+        android:layout_height="325dp"
+        app:srcCompat="@drawable/toystory"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="67dp" />
+
+    <Button
+        android:id="@+id/btnRentar"
+        android:layout_width="99dp"
+        android:layout_height="52dp"
+        android:text="Rentar"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="385dp" />
+
+    <Button
+        android:id="@+id/btnComprar"
+        android:layout_width="110sp"
+        android:layout_height="52sp"
+        android:text="Comprar"
+        tools:layout_editor_absoluteX="249dp"
+        tools:layout_editor_absoluteY="385dp" />
+
+    <ImageView
+        android:id="@+id/ivEstrella"
+        android:layout_width="63dp"
+        android:layout_height="56dp"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:layout_editor_absoluteX="224dp"
+        tools:layout_editor_absoluteY="308dp" />
+
+    <TextView
+        android:id="@+id/tvCantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="715mi"
+        tools:layout_editor_absoluteX="287dp"
+        tools:layout_editor_absoluteY="338dp" />
+
+    <TextView
+        android:id="@+id/tvCalificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10/10"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="287dp"
+        tools:layout_editor_absoluteY="308dp" />
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toy Story"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="207dp"
+        tools:layout_editor_absoluteY="261dp" />
+
+    <ImageView
+        android:id="@+id/ivSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_save"
+        tools:layout_editor_absoluteX="371dp"
+        tools:layout_editor_absoluteY="271dp" />
+
+    <TextView
+        android:id="@+id/tvDescripcion"
+        android:layout_width="379dp"
+        android:layout_height="58dp"
+        android:text="Un vaquero se siente profundamente amenazado y celoso cuando un nuevo astronauta lo reemplaza como el mejor juguete en la habitación de un niño."
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="525dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Genero"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="452dp" />
+
+    <TextView
+        android:id="@+id/tvAccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accion"
+        android:textColor="@color/azul"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="453dp" />
+
+    <TextView
+        android:id="@+id/tvComedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comedia"
+        android:textColor="@color/azul"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="452dp" />
+
+    <TextView
+        android:id="@+id/tvFantasia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fantasia"
+        android:textColor="@color/azul"
+        tools:layout_editor_absoluteX="315dp"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <TextView
+        android:id="@+id/tvAventura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aventuras"
+        android:textColor="@color/azul"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="488dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
