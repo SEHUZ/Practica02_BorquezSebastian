@@ -1,10 +1,15 @@
 <resources>
     <string name="app_name">AmantePeliculas_252115</string>
-    <string name="titulo">AmantePeliculas_252115</string>
-    <string name="genero">AmantePeliculas_252115</string>
-    <string name="accion">AmantePeliculas_252115</string>
-    <string name="comedia">AmantePeliculas_252115</string>
-    <string name="fantasia">AmantePeliculas_252115</string>
-    <string name="aventuras">AmantePeliculas_252115</string>
+    <string name="titulo">Toy Story</string>
+    <string name="genero">Genero</string>
+    <string name="accion">Accion</string>
+    <string name="comedia">Comedia</string>
+    <string name="fantasia">Fantasia</string>
+    <string name="aventuras">Aventuras</string>
+    <string name="rentar">Rentar</string>
+    <string name="comprar">Comprar</string>
+    <string name="calificacion">10/10</string>
+    <string name="cantidad">713Mil</string>
+    <string name="descripcion">Un vaquero se siente profundamente amenazado y celoso cuando un nuevo astronauta lo reemplaza como el mejor juguete en la habitación de un niño.</string>
 
 </resources>

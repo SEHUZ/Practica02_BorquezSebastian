@@ -11,128 +11,156 @@
         android:id="@+id/ivFondo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/fondo"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-150dp" />
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fondo" />
 
     <ImageView
         android:id="@+id/ivPortada"
         android:layout_width="166dp"
         android:layout_height="325dp"
-        app:srcCompat="@drawable/toystory"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="67dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivFondo"
+        app:srcCompat="@drawable/toystory" />
 
     <Button
         android:id="@+id/btnRentar"
         android:layout_width="99dp"
         android:layout_height="52dp"
-        android:text="Rentar"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="385dp" />
+        android:layout_marginStart="72dp"
+        android:text="@string/rentar"
+        android:backgroundTint="@color/cafe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPortada" />
 
     <Button
         android:id="@+id/btnComprar"
         android:layout_width="110sp"
         android:layout_height="52sp"
-        android:text="Comprar"
-        tools:layout_editor_absoluteX="249dp"
-        tools:layout_editor_absoluteY="385dp" />
+        android:layout_marginEnd="60dp"
+        android:text="@string/comprar"
+        android:backgroundTint="@color/amarillo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPortada" />
 
     <ImageView
         android:id="@+id/ivEstrella"
         android:layout_width="63dp"
         android:layout_height="56dp"
-        app:srcCompat="@android:drawable/btn_star_big_on"
-        tools:layout_editor_absoluteX="224dp"
-        tools:layout_editor_absoluteY="308dp" />
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/ivPortada"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
 
     <TextView
         android:id="@+id/tvCantidad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="715mi"
-        tools:layout_editor_absoluteX="287dp"
-        tools:layout_editor_absoluteY="338dp" />
+        android:layout_marginStart="8dp"
+        android:text="@string/cantidad"
+        app:layout_constraintStart_toEndOf="@+id/ivEstrella"
+        app:layout_constraintTop_toBottomOf="@+id/tvCalificacion" />
 
     <TextView
         android:id="@+id/tvCalificacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="10/10"
+        android:layout_marginTop="20dp"
+        android:text="@string/calificacion"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="287dp"
-        tools:layout_editor_absoluteY="308dp" />
+        app:layout_constraintStart_toEndOf="@+id/ivEstrella"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
 
     <TextView
         android:id="@+id/tvTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Toy Story"
-        android:textSize="25sp"
-        tools:layout_editor_absoluteX="207dp"
-        tools:layout_editor_absoluteY="261dp" />
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/titulo"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/ivPortada"
+        app:layout_constraintTop_toBottomOf="@+id/ivFondo" />
 
     <ImageView
         android:id="@+id/ivSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_save"
-        tools:layout_editor_absoluteX="371dp"
-        tools:layout_editor_absoluteY="271dp" />
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toEndOf="@+id/tvTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/ivFondo"
+        app:srcCompat="@drawable/ic_save" />
 
     <TextView
         android:id="@+id/tvDescripcion"
         android:layout_width="379dp"
         android:layout_height="58dp"
-        android:text="Un vaquero se siente profundamente amenazado y celoso cuando un nuevo astronauta lo reemplaza como el mejor juguete en la habitación de un niño."
+        android:layout_marginTop="56dp"
+        android:text="@string/descripcion"
         android:textAlignment="center"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="525dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGenero" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/tvGenero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Genero"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/genero"
         android:textColor="@color/black"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="452dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRentar" />
 
     <TextView
         android:id="@+id/tvAccion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Accion"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/accion"
         android:textColor="@color/azul"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="453dp" />
+        app:layout_constraintStart_toEndOf="@+id/tvGenero"
+        app:layout_constraintTop_toBottomOf="@+id/btnRentar" />
 
     <TextView
         android:id="@+id/tvComedia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Comedia"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/comedia"
         android:textColor="@color/azul"
-        tools:layout_editor_absoluteX="230dp"
-        tools:layout_editor_absoluteY="452dp" />
+        app:layout_constraintStart_toEndOf="@+id/tvAccion"
+        app:layout_constraintTop_toBottomOf="@+id/btnComprar" />
 
     <TextView
         android:id="@+id/tvFantasia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fantasia"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/fantasia"
         android:textColor="@color/azul"
-        tools:layout_editor_absoluteX="315dp"
-        tools:layout_editor_absoluteY="450dp" />
+        app:layout_constraintStart_toEndOf="@+id/tvComedia"
+        app:layout_constraintTop_toBottomOf="@+id/btnComprar" />
 
     <TextView
         android:id="@+id/tvAventura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aventuras"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/aventuras"
         android:textColor="@color/azul"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="488dp" />
+        app:layout_constraintStart_toEndOf="@+id/tvGenero"
+        app:layout_constraintTop_toBottomOf="@+id/tvGenero" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
