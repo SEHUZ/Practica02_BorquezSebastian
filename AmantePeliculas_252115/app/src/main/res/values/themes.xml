@@ -3,7 +3,21 @@
     <style name="Base.Theme.AmantePeliculas_252115" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="colorPrimary">@color/azul</item>
+        <item name="colorSecondary">@color/amarillo</item>
+        <item name="colorTertiary">@color/cafe</item>
+
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorSurface">@color/white</item>
+
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/azul</item>
+
+
     </style>
+
+
 
     <style name="Theme.AmantePeliculas_252115" parent="Base.Theme.AmantePeliculas_252115" />
 </resources>
